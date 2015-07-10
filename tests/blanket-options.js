@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 /* globals blanket, module */
 
 var options = {
