@@ -8,6 +8,13 @@ var options = {
   enableCoverage: true,
   cliOptions: {
     reporters: ['lcov'],
+    lcovOptions: {
+      outputFile: 'lcov.info',
+      renamer: function(moduleName){
+        var expression = /^codecov/;
+        return moduleName.replace(expression, 'app') + '.js';
+      }
+    },
     autostart: true
   }
 };
