@@ -23,4 +23,4 @@ script:
   - npm test
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/wip/codecov)
