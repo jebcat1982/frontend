@@ -2,33 +2,47 @@
 @import "bootstrap/theme";
 
 
-/* nav */
-div.container {
-	width: 1000px;
+.container {
+	width: 70%;
 }
 
-/* hero */
+#main-nav {
+
+}
+#content {
+	#hero {
+		.jumbotron {
+			margin-bottom: 0;
+			margin-top: 20px;
+		}
+	}
+
+	#points-top {
+		.row {
+			padding: 40px 0 40px 0;
+		}
+	}
 
 
-/* points */
+	#features {
+
+	}
 
 
-/* feature highlights */
+	/* one-liner */
 
 
-/* one-liner */
+	/* pricing */
 
 
-/* pricing */
+	/* testimonials */
 
 
-/* testimonials */
+	/* more points */
 
 
-/* more points */
+	/* final CTA */
 
-
-/* final CTA */
-
+}
 
 /* footer */
