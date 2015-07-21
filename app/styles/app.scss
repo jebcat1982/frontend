@@ -1,46 +1,121 @@
 @import "bootstrap";
 
-.container {
-	width: 70%;
+html {}
+
+.full-width {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#main-nav {
-
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
+
+#main-nav {}
+
 #content {
+
+  #hero,
+  #points-top,
+  #feature-one,
+  #feature-two,
+  #feature-three,
+  #one-liner,
+  #pricing,
+  #quotes,
+  #points-bottom,
+  #last-cta {
+    width: 100%;
+    padding: 0 15%;
+    .row {
+      padding: 40px 0;
+    }
+  }
+
+  .highlight {
+    background-color: #fff6f9;
+    border-bottom: 1px solid #ffd3e1;
+  }
+
 	#hero {
 		.jumbotron {
-			margin-bottom: 0;
+			margin-bottom: 20px;
 			margin-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #fff;
 		}
 	}
 
-	#points-top {
-		.row {
-			padding: 40px 0 40px 0;
-		}
-	}
+	#points-top {}
+
+	#features {}
+
+	#one-liner {
+    code {
+      margin: 15px 0;
+      padding: 20px;
+      display: block;
+      background-color: white;
+      border: 2px solid #ccc;
+      width: 500px;
+      text-align: center;
+    }
+
+  }
+
+	#pricing {
+
+    .open-source,
+    .private-packs,
+    .enterprise {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 0;
+
+      h5 {
+        text-align: center;
+      }
+      .well {
+        background: #ccc;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        padding: 10px 0;
+      }
+      .row {
+        padding: 10px 0;
+
+        p {
+          text-align: center;
+          margin: 4px 0;
+        }
+      }
+    }
+
+    .open-source, .enterprise {
+      width: 19%;
+      display: inline-block;
+      float: left;
+    }
+
+    .private-packs {
+      width: 60%;
+      display: inline-block;
+      float: left;
+      margin: 0 1%;
+    }
 
 
-	#features {
+  }
 
-	}
+	#quotes {}
 
+	#points-bottom {}
 
-	/* one-liner */
-
-
-	/* pricing */
-
-
-	/* testimonials */
-
-
-	/* more points */
-
-
-	/* final CTA */
-
+	#last-cta {}
 }
 
 /* footer */
