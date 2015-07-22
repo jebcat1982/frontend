@@ -1,34 +1,182 @@
 @import "bootstrap";
-@import "bootstrap/theme";
 
+html {}
 
-/* nav */
-div.container {
-	width: 1000px;
+.full-width {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* hero */
+#main-nav {}
+
+#content {
+
+  #hero,
+  #points-top,
+  #feature-one,
+  #feature-two,
+  #feature-three,
+  #one-liner,
+  #pricing,
+  #quotes,
+  #points-bottom,
+  #last-cta {
+    width: 100%;
+    padding: 0 15%;
+    .row {
+      padding: 40px 0;
+    }
+  }
+
+  .highlight {
+    background-color: #fff6f9;
+    border-bottom: 1px solid #ffd3e1;
+  }
+
+	#hero {
+    background-color: #ff2569;
+
+		.jumbotron {
+			margin-bottom: 20px;
+			margin-top: 40px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: inherit;
+      text-align: center;
+		}
+	}
+
+	#points-top {}
+
+	#features {}
+
+	#one-liner {
+    text-align: center;
+    code {
+      margin: 15px auto;
+      padding: 15px;
+      display: block;
+      background-color: white;
+      border: 2px solid #ccc;
+      width: 500px;
+      text-align: center;
+    }
+
+  }
+
+	#pricing {
+
+    .open-source,
+    .private-packs,
+    .enterprise {
+      border-radius: 5px;
+      padding: 0;
+
+      h5 {
+        text-align: center;
+      }
+      .well {
+        background: #ccc;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        padding: 10px 0;
+        box-shadow: none;
+        text-align: center;
+
+        /* column fix */
+        display: inline-block;
+        width:100%;
+      }
+      .row {
+        padding: 10px 0;
+
+        p {
+          text-align: center;
+          margin: 4px 0;
+        }
+      }
+    }
+
+    .open-source, .enterprise {
+      width: 19%;
+      display: inline-block;
+      float: left;
+    }
+
+    .open-source {
+      border: 2px solid #00de9d;
+
+      .well {
+        background-color: #00de9d;
+      }
+    }
+
+    .enterprise {
+      border: 2px solid #ff2569;
+
+      .well {
+        background-color: #ff2569;
+      }
+    }
+
+    .private-packs {
+      border: 2px solid #7eabf5;
+      width: 60%;
+      display: inline-block;
+      float: left;
+      margin: 0 1%;
+      .well {
+        background-color: #7eabf5;
+      }
+      .row {
+        margin-top: -5px;
+      }
+    }
 
 
-/* points */
+  }
 
+	#quotes {}
 
-/* feature highlights */
+	#points-bottom {}
 
+	#last-cta {
+    background-color: #ff2569;
+    .row {
+      vertical-align: middle;
+    }
+  }
+}
 
-/* one-liner */
+#footer {}
 
+.footer {
+  width: 100%;
+  padding: 0 15%;
+  .row {
+    text-align: center;
+    margin: 0;
+    padding: 40px 0;
+  }
+}
 
-/* pricing */
-
-
-/* testimonials */
-
-
-/* more points */
-
-
-/* final CTA */
-
-
-/* footer */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  #content {
+    #hero,
+    #points-top,
+    #feature-one,
+    #feature-two,
+    #feature-three,
+    #one-liner,
+    #pricing,
+    #quotes,
+    #points-bottom,
+    #last-cta {
+      padding: 0 20px;
+    }
+  }
+}
