@@ -7,12 +7,6 @@ html {}
   padding-right: 0;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-
 #main-nav {}
 
 #content {
@@ -44,10 +38,11 @@ html {}
 
 		.jumbotron {
 			margin-bottom: 20px;
-			margin-top: 20px;
+			margin-top: 40px;
       padding-left: 0;
       padding-right: 0;
       background-color: inherit;
+      text-align: center;
 		}
 	}
 
@@ -146,7 +141,42 @@ html {}
 
 	#points-bottom {}
 
-	#last-cta {}
+	#last-cta {
+    background-color: #ff2569;
+    .row {
+      vertical-align: middle;
+    }
+  }
 }
 
-/* footer */
+#footer {}
+
+.footer {
+  width: 100%;
+  padding: 0 15%;
+  .row {
+    text-align: center;
+    margin: 0;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  #content {
+    #hero,
+    #points-top,
+    #feature-one,
+    #feature-two,
+    #feature-three,
+    #one-liner,
+    #pricing,
+    #quotes,
+    #points-bottom,
+    #last-cta {
+      padding: 0 20px;
+    }
+  }
+}
