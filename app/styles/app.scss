@@ -26,8 +26,13 @@ $darkest-gray: #333;
   background-color: $primary-green;
   border: $primary-green;
   color: $accent-green-btn;
-  text-transform: uppercase;
   font-weight: bold;
+  i {
+    margin-right: 5px;
+  }
+  i:last-child {
+    margin-right: 10px;
+  }
 }
 .btn-primary:hover, .btn-primary:active {
   opacity: 0.9;
