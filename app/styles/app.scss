@@ -54,6 +54,7 @@ a.btn.btn-default, .btn.btn-default:visited {
   color: $primary-pink;
   background-color: transparent;
   border: 2px solid $accent-pink-border;
+  font-weight: bold;
 }
 
 a.btn.btn-default:hover, .btn.btn-default:active {
@@ -95,10 +96,16 @@ a.btn.btn-default:hover, .btn.btn-default:active {
     ul {
       margin-top: 7px;
 
-      li {
+      li a, li a:visited {
         text-transform: uppercase;
         font-weight: bold;
+        color: $darker-gray;
       }
+
+      li a:hover, li a:active {
+        color: dark-gray;
+      }
+
       li:last-child a {
         padding: 5px 10px;
         margin: 9px 0 0 0;
