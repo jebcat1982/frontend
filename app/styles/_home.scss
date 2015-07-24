@@ -112,13 +112,42 @@
         padding: 20px 0;
         box-shadow: none;
         text-align: center;
+        display: inline-block; /* column fix */
+        width: 100%; /* column fix */
 
-        /* column fix */
-        display: inline-block;
-        width:100%;
+        p {
+          opacity: 0.8;
+        }
 
-        i {
+        p.price {
+          margin-bottom: 0;
+          margin-top: 5px;
+
+          span {
+            font-size: 20px;
+            margin-right: 3px;
+          }
+        }
+
+        i.ion-bag, i.ion-briefcase, i.ion-lock-combination {
           font-size: 32px;
+          color: black;
+          opacity: 0.4;
+        }
+
+        i.ion-lock-combination {
+          color: white;
+        }
+
+        button.btn-xs {
+          border: none;
+          color: white;
+          font-weight: bold;
+
+          i {
+            margin-left: 5px;
+            margin-right: 2px;
+          }
         }
       }
       .row {
@@ -142,6 +171,10 @@
 
       .well {
         background-color: $secondary-green;
+
+        button.btn-xs {
+          background-color: $price-green-btn;
+        }
       }
     }
 
@@ -150,6 +183,11 @@
 
       .well {
         background-color: $primary-pink;
+        color: white;
+
+        button.btn-xs {
+          background-color: $price-pink-btn;
+        }
       }
     }
 
@@ -161,6 +199,10 @@
       margin: 0 1%;
       .well {
         background-color: $secondary-blue;
+
+        button.btn-xs {
+          background-color: $price-blue-btn;
+        }
       }
       .row {
         margin-top: -5px;
