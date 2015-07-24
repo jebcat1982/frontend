@@ -1,0 +1,107 @@
+@import "bootstrap";
+
+html {}
+
+/* Colors ========== */
+
+$primary-pink: #ff2569;
+$primary-green: #00f1D7;
+
+$secondary-green: #00de9d;
+$secondary-blue: #7eabf5;
+
+$accent-pink: #fff6f9;
+$accent-pink-border: #ffd3e1;
+$accent-green-btn: #13796e;
+
+$light-gray: #ccc;
+$lighter-gray: #ddd;
+$lightest-gray: #efefef;
+$dark-gray: #999;
+$darker-gray: #666;
+$darkest-gray: #333;
+
+
+/* Buttons ========== */
+
+
+.btn-primary, .btn-primary:visited {
+  background-color: $primary-green;
+  border: $primary-green;
+  color: $accent-green-btn;
+  font-weight: bold;
+  i {
+    margin-right: 5px;
+  }
+  i:last-child {
+    margin-right: 10px;
+  }
+}
+
+.btn-primary:hover, .btn-primary:active {
+  opacity: 0.9;
+  background-color: $primary-green;
+  border: $primary-green;
+  color: $accent-green-btn;
+  box-shadow: none;
+}
+
+a.btn.btn-default, .btn.btn-default:visited {
+  color: $primary-pink;
+  background-color: transparent;
+  border: 2px solid $accent-pink-border;
+}
+
+a.btn.btn-default:hover, .btn.btn-default:active {
+  color: white;
+  background-color: $primary-pink;
+  border: 2px solid $primary-pink;
+}
+
+
+/* Main wrapper spacing ========== */
+
+
+.full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* Navigation ========== */
+
+
+.navbar-default {
+  border: none;
+  -webkit-box-shadow: 2px 5px 20px -12px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 5px 20px -12px rgba(0,0,0,0.5);
+  box-shadow: 2px 5px 20px -12px rgba(0,0,0,0.5);
+
+  .navbar-brand {
+    height: auto;
+
+    img {
+      height: 34px;
+      width: 134px;
+      display: inline-block;
+    }
+  }
+
+  .navbar-collapse {
+    ul {
+      margin-top: 7px;
+
+      li {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      li:last-child a {
+        padding: 5px 10px;
+        margin: 9px 0 0 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@import "_home.scss";
