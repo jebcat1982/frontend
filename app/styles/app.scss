@@ -4,19 +4,8 @@ html {}
 
 /* Colors ========== */
 
-$primary-pink: #ff2569;
+$primary-pink: rgba(255,37,105,1);
 $primary-green: #00f1D7;
-
-$secondary-green: #00de9d;
-$secondary-blue: #7eabf5;
-
-$accent-pink: #fff6f9;
-$accent-pink-border: #ffd3e1;
-$accent-green-btn: #13796e;
-
-$price-green-btn: #19c693;
-$price-blue-btn: #7299d9;
-$price-pink-btn: #e71d5c;
 
 $light-gray: #ccc;
 $lighter-gray: #ddd;
@@ -25,6 +14,20 @@ $dark-gray: #999;
 $darker-gray: #666;
 $darkest-gray: #333;
 
+
+$secondary-green: rgba(0,222,157,1);
+$secondary-blue: rgba(126,171,245,1);
+$secondary-hover-green: rgba(0,222,157,0.8);
+$secondary-hover-blue: rgba(126,171,245,0.8);
+$secondary-hover-pink: rgba(255,37,105,0.8);
+
+$price-green-btn: #19c693;
+$price-blue-btn: #7299d9;
+$price-pink-btn: #e71d5c;
+
+$accent-pink: #fff6f9;
+$accent-pink-border: #ffd3e1;
+$accent-green-btn: #13796e;
 
 /* Buttons ========== */
 
