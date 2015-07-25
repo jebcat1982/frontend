@@ -139,18 +139,15 @@
         display: inline-block; /* column fix */
         width: 100%; /* column fix */
 
-        .col-sm-4 {
+        a.col-sm-4 {
           padding-top: 20px;
           padding-bottom: 20px;
+          color:rgba(0,0,0,0.6);
         }
 
-        .col-sm-12 {
+        a.col-sm-12 {
           padding-top: 20px;
           padding-bottom: 20px;
-        }
-
-        p {
-          opacity: 0.8;
         }
 
         p.price {
@@ -204,8 +201,14 @@
     .open-source {
       border: 2px solid $secondary-green;
 
-      .col-sm-12 {
+      a.col-sm-12, a.col-sm-12:visited {
         background-color: $secondary-green;
+        color:rgba(0,0,0,0.6);
+      }
+
+      a.col-sm-12:hover, a.col-sm-12:active {
+        background-color: black;
+        text-decoration: none;
       }
 
       button.btn-xs {
@@ -216,9 +219,14 @@
     .enterprise {
       border: 2px solid $primary-pink;
 
-      .col-sm-12 {
+      a.col-sm-12, a.col-sm-12:visited {
         background-color: $primary-pink;
-        color: white;
+        color:rgba(255,255,255,0.9);
+      }
+
+      a.col-sm-12:hover, a.col-sm-12:active {
+        background-color: black;
+        text-decoration: none;
       }
 
       button.btn-xs {
@@ -236,8 +244,13 @@
       .well, .well-lg {
         padding: 0;
 
-        .col-sm-4 {
+        a.col-sm-4, a.col-sm-4:visited {
           background-color: $secondary-blue;
+        }
+
+        a.col-sm-4:hover, a.col-sm-4:active {
+          background-color: black;
+          text-decoration: none;
         }
 
         button.btn-xs {
@@ -291,9 +304,7 @@
   }
 }
 
-#footer {}
-
-.footer {
+#footer {
   width: 100%;
   padding: 0 15%;
 
@@ -327,6 +338,7 @@
   }
 }
 
+
 @media (max-width: 1080px) {
   #content {
     #pricing {
@@ -347,8 +359,6 @@
   }
 
   #quotes {
-
-
 
     .col-lg-6:first-child {
       margin-bottom: 30px;
@@ -425,7 +435,7 @@
       }
     }
 
-     #quotes {
+    #quotes {
 
       .col-lg-6:first-child {
         border-bottom: 1px solid $accent-pink-border;
@@ -435,7 +445,6 @@
 
     #last-cta {
       text-align: center;
-
     }
   }
 }
