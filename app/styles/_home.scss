@@ -38,13 +38,20 @@
       text-align: center;
       color: white;
 
+      h3 {
+        width: 70%;
+        margin: 0 auto;
+      }
+
       .btn {
         margin-top: 20px;
+
         img {
           height: 16px;
           width: 16px;
           margin-right: 5px;
         }
+
         img:last-child {
           margin-right: 10px;
         }
@@ -121,15 +128,26 @@
       h5 {
         text-align: center;
       }
-      .well {
+
+      .well, .well-lg {
         border-radius: 0;
         border: none;
         margin: 0;
-        padding: 20px 0;
+        padding: 0;
         box-shadow: none;
         text-align: center;
         display: inline-block; /* column fix */
         width: 100%; /* column fix */
+
+        .col-sm-4 {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .col-sm-12 {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
 
         p {
           opacity: 0.8;
@@ -148,7 +166,7 @@
         i.ion-bag, i.ion-briefcase, i.ion-lock-combination {
           font-size: 32px;
           color: black;
-          opacity: 0.4;
+          opacity: 0.5;
         }
 
         i.ion-lock-combination {
@@ -166,6 +184,7 @@
           }
         }
       }
+
       .row {
         padding: 10px 0;
 
@@ -185,25 +204,25 @@
     .open-source {
       border: 2px solid $secondary-green;
 
-      .well {
+      .col-sm-12 {
         background-color: $secondary-green;
+      }
 
-        button.btn-xs {
-          background-color: $price-green-btn;
-        }
+      button.btn-xs {
+        background-color: $price-green-btn;
       }
     }
 
     .enterprise {
       border: 2px solid $primary-pink;
 
-      .well {
+      .col-sm-12 {
         background-color: $primary-pink;
         color: white;
+      }
 
-        button.btn-xs {
-          background-color: $price-pink-btn;
-        }
+      button.btn-xs {
+        background-color: $price-pink-btn;
       }
     }
 
@@ -213,20 +232,23 @@
       display: inline-block;
       float: left;
       margin: 0 1%;
-      .well {
-        background-color: $secondary-blue;
+
+      .well, .well-lg {
+        padding: 0;
+
+        .col-sm-4 {
+          background-color: $secondary-blue;
+        }
 
         button.btn-xs {
           background-color: $price-blue-btn;
         }
       }
-      .row {
-        margin-top: -5px;
-      }
     }
   }
 
   #quotes {
+
     .col-lg-6 {
       text-align: center;
       color: $darker-gray;
@@ -255,7 +277,7 @@
       color: white;
 
       .btn {
-        margin-top: 20px;
+
         img {
           height: 16px;
           width: 16px;
@@ -321,6 +343,15 @@
         float: none;
         margin: 20px 0;
       }
+    }
+  }
+
+  #quotes {
+
+
+
+    .col-lg-6:first-child {
+      margin-bottom: 30px;
     }
   }
 }
@@ -392,6 +423,19 @@
         }
 
       }
+    }
+
+     #quotes {
+
+      .col-lg-6:first-child {
+        border-bottom: 1px solid $accent-pink-border;
+        padding: 30px;
+      }
+    }
+
+    #last-cta {
+      text-align: center;
+
     }
   }
 }

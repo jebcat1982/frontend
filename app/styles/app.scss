@@ -34,19 +34,13 @@ $darkest-gray: #333;
   border: $primary-green;
   color: $accent-green-btn;
   font-weight: bold;
-  i {
-    margin-right: 5px;
-  }
-  i:last-child {
-    margin-right: 10px;
-  }
 }
 
 .btn-primary:hover, .btn-primary:active {
   opacity: 0.9;
-  background-color: $primary-green;
+  background-color: $primary-green !important;
   border: $primary-green;
-  color: $accent-green-btn;
+  color: $accent-green-btn !important;
   box-shadow: none;
 }
 
@@ -103,13 +97,18 @@ a.btn.btn-default:hover, .btn.btn-default:active {
       }
 
       li a:hover, li a:active {
-        color: dark-gray;
+        color: $dark-gray;
       }
 
       li:last-child a {
         padding: 5px 10px;
         margin: 9px 0 0 0;
         font-weight: bold;
+      }
+
+      li:last-child a.btn-default:hover {
+        background-color: $primary-pink;
+        color: white;
       }
     }
   }
