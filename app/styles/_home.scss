@@ -22,10 +22,6 @@
     border-bottom: 1px solid $accent-pink-border;
   }
 
-  .highlight:last-child {
-    border-bottom: none;
-  }
-
   #hero {
     background-color: $primary-pink;
 
@@ -40,7 +36,7 @@
 
       h3 {
         width: 70%;
-        margin: 0 auto;
+        margin: 20px auto;
       }
 
       .btn {
@@ -76,6 +72,12 @@
   #feature-one, #feature-two, #feature-three {
     .row {
       display: inline-flex;
+
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 20px 0 20px 0;
+      }
 
       .col-lg-6 {
 
@@ -289,6 +291,10 @@
       vertical-align: middle;
       color: white;
 
+      h4 {
+        font-size: 20px;
+      }
+
       .btn {
 
         img {
@@ -296,6 +302,7 @@
           width: 16px;
           margin-right: 5px;
         }
+
         img:last-child {
           margin-right: 10px;
         }
@@ -363,6 +370,12 @@
         margin-bottom: 30px;
       }
     }
+
+    #last-cta {
+      .btn {
+        margin: 10px 0;
+      }
+    }
   }
 }
 
@@ -410,21 +423,14 @@
         .feature-content {
           margin: 0;
         }
-
       }
     }
 
     #pricing {
 
-      .open-source, .enterprise {
-        a.col-sm-12 {
-          float: left;
-          width: 100%;
-        }
-      }
+      .open-source, .enterprise, .private-packs {
 
-      .private-packs {
-        a.col-sm-4 {
+        a.col-sm-12, a.col-sm-4 {
           float: left;
           width: 100%;
         }
