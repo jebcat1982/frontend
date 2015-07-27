@@ -65,7 +65,7 @@
       text-align: center;
       i {
         font-size: 44px;
-        color: $secondary-blue;
+        color: $secondary-green;
       }
       p {
         font-weight: bold;
@@ -226,7 +226,7 @@
       }
 
       a.col-sm-12:hover, a.col-sm-12:active {
-        background-color: $secondary-hover-pink;
+        background-color: $primary-hover-pink;
         text-decoration: none;
       }
 
@@ -270,7 +270,6 @@
       p.quote-graph {
         font-size: 20px;
         margin-bottom: 20px;
-        font-style: italic;
       }
 
       img {
@@ -278,7 +277,7 @@
       }
 
       p.quote-name {
-
+        font-weight: 700;
       }
     }
   }

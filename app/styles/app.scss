@@ -5,7 +5,13 @@ html {}
 /* Colors ========== */
 
 $primary-pink: rgba(255,37,105,1);
-$primary-green: #00f1D7;
+$primary-hover-pink: rgba(255,37,105,0.8);
+
+$secondary-green: rgba(0,222,157,1);
+$secondary-hover-green: rgba(0,222,157,0.8);
+
+$secondary-blue: rgba(126,171,245,1);
+$secondary-hover-blue: rgba(126,171,245,0.8);
 
 $light-gray: #ccc;
 $lighter-gray: #ddd;
@@ -13,13 +19,6 @@ $lightest-gray: #efefef;
 $dark-gray: #999;
 $darker-gray: #666;
 $darkest-gray: #333;
-
-
-$secondary-green: rgba(0,222,157,1);
-$secondary-blue: rgba(126,171,245,1);
-$secondary-hover-green: rgba(0,222,157,0.8);
-$secondary-hover-blue: rgba(126,171,245,0.8);
-$secondary-hover-pink: rgba(255,37,105,0.8);
 
 $price-green-btn: #19c693;
 $price-blue-btn: #7299d9;
@@ -33,16 +32,16 @@ $accent-green-btn: #13796e;
 
 
 .btn-primary, .btn-primary:visited {
-  background-color: $primary-green;
-  border: $primary-green;
+  background-color: $secondary-green;
+  border: $secondary-green;
   color: $accent-green-btn;
   font-weight: bold;
 }
 
 .btn-primary:hover, .btn-primary:active {
   opacity: 0.9;
-  background-color: $primary-green !important;
-  border: $primary-green;
+  background-color: $secondary-green !important;
+  border: $secondary-green;
   color: $accent-green-btn !important;
   box-shadow: none;
 }
@@ -76,7 +75,7 @@ html, body {
 }
 
 h1, h2 {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3, p {
@@ -85,7 +84,7 @@ h3, p {
 
 h4 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Navigation ========== */
