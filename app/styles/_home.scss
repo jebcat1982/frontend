@@ -62,6 +62,7 @@
       i {
         font-size: 44px;
         color: $secondary-green;
+        margin-bottom: 15px;
       }
       p {
         font-weight: bold;
@@ -163,13 +164,14 @@
           }
         }
 
-        i.ion-earth, i.ion-bag, i.ion-briefcase, i.ion-home, i.ion-lock-combination {
+        i.bt-globe, i.bt-lock, i.bt-briefcase, i.bt-home, i.bt-rocket {
           font-size: 32px;
           color: black;
           opacity: 0.5;
+          margin-bottom: 7px;
         }
 
-        i.ion-lock-combination {
+        i.bt-rocket {
           color: white;
         }
 
