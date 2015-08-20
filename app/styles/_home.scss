@@ -11,15 +11,19 @@
   #points-bottom,
   #last-cta {
     width: 100%;
-    padding: 0 15%;
-    .row {
-      padding: 60px 0;
-    }
+    padding: 60px 15%;
   }
 
   .highlight {
     background-color: $accent-pink;
     border-bottom: 1px solid $accent-pink-border;
+  }
+
+  .btn-signup > i{
+    padding: 0 5px;
+  }
+  .fa-gitlab{
+
   }
 
   #hero {
@@ -72,7 +76,7 @@
 
   #feature-one, #feature-two, #feature-three {
     .row {
-      display: inline-flex;
+      // display: inline-flex;
 
       p {
         font-size: 16px;
@@ -82,19 +86,15 @@
 
       .col-lg-6 {
 
-        i {
-          margin-left: 10px;
+        a.btn.btn-default.browser-ext{
+          padding: 12px;
+          width: 65px;
+          &:hover, &:active {
+            background-color: $accent-pink-border;
+            border: 2px solid $accent-pink-border;
+          }
         }
 
-        a.btn.btn-default.browser-ext, .btn.btn-default.browser-ext:visited {
-          padding: 12px;
-        }
-
-        a.btn.btn-default.browser-ext:hover, .btn.btn-default.browser-ext:active {
-          background-color: $accent-pink-border;
-          border: 2px solid $accent-pink-border;
-          padding: 12px;
-        }
       }
 
       .feature-content {
@@ -159,7 +159,7 @@
           margin-top: 5px;
 
           span {
-            font-size: 20px;
+            font-size: 40px;
             margin-right: 3px;
           }
         }
