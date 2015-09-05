@@ -30,6 +30,20 @@ $accent-green-btn: #13796e;
 
 /* Buttons ========== */
 
+.btn-info, .btn-info:visited {
+  background-color: #3F5FA7;
+  border-color: #222850;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-info:hover, .btn-info:active {
+  opacity: 0.9;
+  background-color: $primary-hover-pink;
+  border-color: $primary-pink;
+  // color: white !important;
+  box-shadow: none;
+}
 
 .btn-primary, .btn-primary:visited {
   background-color: transparent;
@@ -46,14 +60,14 @@ $accent-green-btn: #13796e;
   box-shadow: none;
 }
 
-a.btn.btn-default, .btn.btn-default:visited {
+.btn.btn-default, .btn.btn-default:visited {
   color: $primary-pink;
   background-color: transparent;
   border: 2px solid $accent-pink-border;
   font-weight: bold;
 }
 
-a.btn.btn-default:hover, .btn.btn-default:active {
+.btn.btn-default:hover, .btn.btn-default:active {
   color: white;
   background-color: $primary-pink;
   border: 2px solid $primary-pink;

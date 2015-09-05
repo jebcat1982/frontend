@@ -2,10 +2,8 @@
 
   #hero,
   #points-top,
-  #feature-one,
-  #feature-two,
-  #feature-three,
-  #one-liner,
+  .features,
+  #languages,
   #pricing,
   #quotes,
   #points-bottom,
@@ -22,12 +20,23 @@
   .btn-signup > i{
     padding: 0 5px;
   }
-  .fa-gitlab{
 
+  .fa-gitlab:before {
+    // need to create a better icon here
+    content: "\f1d3";
   }
 
   #hero {
     background-color: $primary-pink;
+    background: -moz-linear-gradient(-45deg,  #fc2b6a 0%, #fc2b6a 51%, #f75988 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fc2b6a), color-stop(51%,#fc2b6a), color-stop(100%,#f75988)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #fc2b6a 0%,#fc2b6a 51%,#f75988 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #fc2b6a 0%,#fc2b6a 51%,#f75988 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #fc2b6a 0%,#fc2b6a 51%,#f75988 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #fc2b6a 0%,#fc2b6a 51%,#f75988 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc2b6a', endColorstr='#f75988',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     .jumbotron {
       margin-bottom: 15px;
@@ -86,7 +95,7 @@
 
       .col-lg-6 {
 
-        a.btn.btn-default.browser-ext{
+        .btn.btn-default.browser-ext{
           padding: 12px;
           width: 65px;
           &:hover, &:active {
@@ -104,10 +113,10 @@
     }
   }
 
-  #one-liner {
+  #languages {
     text-align: center;
 
-    code {
+    > code {
       margin: 15px auto;
       padding: 15px;
       display: block;
@@ -116,8 +125,9 @@
       width: 65%;
       text-align: center;
     }
-    i {
-      margin-left: 10px;
+    > .languages > a {
+      margin: 0 5px;
+      padding: 5px;
     }
   }
 
@@ -281,7 +291,7 @@
       }
 
       p.quote-name {
-        font-weight: 700;
+        // font-weight: 700;
       }
     }
   }
@@ -390,10 +400,8 @@
 
     #hero,
     #points-top,
-    #feature-one,
-    #feature-two,
-    #feature-three,
-    #one-liner,
+    .features,
+    #languages,
     #pricing,
     #quotes,
     #points-bottom,
@@ -409,7 +417,7 @@
       }
     }
 
-    #feature-one, #feature-two, #feature-three {
+    .features {
 
       .row {
         display: block;

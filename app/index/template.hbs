@@ -11,10 +11,10 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a class="btn btn-default" href="#" role="button">Sign In</a></li>
+            <li><a href="#languages" data-track="nav,languages">Languages</a></li>
+            <li><a href="#features" data-track="nav,features">Features</a></li>
+            <li><a href="#pricing" data-track="nav,pricing">Pricing</a></li>
+            <li><a class="btn btn-default" href="#" data-target="#modal-signup" data-toggle="modal" role="button" data-track="signup,header">Sign In</a></li>
         </ul>
       </div>
   </div>
@@ -27,8 +27,8 @@
       <h1>Continuous code coverage.</h1>
       <h3>Reduce technical debt with visualized test performance, faster code reviews, and improved commit quality.</h3>
       <p>
-        <a class="btn btn-primary btn-lg btn-signup" href="#" role="button">
-          <i class="fa fa-github"></i> <i class="fa fa-bitbucket"></i> <fa class="fa-gitlab"></fa>
+        <a class="btn btn-primary btn-lg btn-signup" href="#" data-target="#modal-signup" data-toggle="modal" role="button" data-track="signup,hero">
+          <i class="fa fa-github"></i> <i class="fa fa-bitbucket"></i> <i class="fa fa-gitlab"></i>
           Sign up for free
         </a>
       </p>
@@ -60,7 +60,9 @@
 
   <!-- pull request metrics -->
 
-  <div class="container highlight" id="feature-one">
+  <span id="features"></span>
+
+  <div class="container highlight features" id="feature-one">
     <div class="row">
       <div class="col-lg-6">
         <img src="/images/pullrequest.png" width="100%" height="auto" alt="Compare pull request metrics image" />
@@ -74,7 +76,7 @@
 
   <!-- commit status -->
 
-  <div class="container highlight" id="feature-two">
+  <div class="container highlight features" id="feature-two">
     <div class="row">
       <div class="col-lg-6 feature-content">
         <h4>2x Commit statuses to maintain quality standards.</h4>
@@ -88,13 +90,13 @@
 
   <!-- browser extension -->
 
-  <div class="container highlight" id="feature-three">
+  <div class="container highlight features" id="feature-three">
     <div class="row">
       <div class="col-lg-6">
         <img src="/images/extension.png" width="100%" height="auto" alt="browser extension image" />
       </div>
       <div class="col-lg-6 feature-content">
-        <h4>Use the browser extension.</h4>
+        <h4>Overlays reports with our browser extension</h4>
         <p>Overlay coverage reports and metrics directly in Github or Bitbucket for seamless integration.</p>
         <p>
           <sup>Now available on</sup>
@@ -106,16 +108,50 @@
     </div>
   </div>
 
-  <div class="container highlight" id="one-liner">
-    <h4>All of Codecov in one line.</h4>
-    <code>bash &lt;(curl -s https://codecov.io/bash)</code>
-    <p>
-      <a class="btn btn-default" href="#" role="button">
-        View All Supported Languages <i class="fa fa-arrow-right"></i>
-      </a>
-      <a class="btn btn-default" href="#" role="button">
-        See Example Repo <i class="fa fa-arrow-right"></i>
-      </a>
+  <!-- other features -->
+
+  <div class="container highlight features text-center" id="feature-four">
+    <h4>Notifications</h4>
+    <p>Get notified of coverage changes</p>
+    <br>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-2"><img src="https://d21oh8fj97neu1.cloudfront.net/ido4tnz4/view.png" width="50" height="50" alt="slack"></div>
+      <div class="col-sm-2"><img src="https://www.mikearnesen.com/wp-content/uploads/2015/04/hipchat-logo.png" width="50" height="50" alt="hipchat"></div>
+      <div class="col-sm-2"><img src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/368944-d81438d134dc6c5567ffaab69861cb34-medium_jpg.jpg?buster=1404125976" width="50" height="50" alt="gitter"></div>
+      <div class="col-sm-2"><img src="https://blog.formstack.com/wp-content/uploads/2010/08/webhooks_logo-150x150.png" width="50" height="50" alt="webhooks"></div>
+    </div>
+  </div>
+
+  <!-- languages -->
+
+  <div class="container highlight" id="languages">
+    <h4>Integrate in 10 seconds. <i>Start the clock!</i></h4>
+    <code>pip install --user codecov &amp;&amp; codecov</code>
+    <p class="help-block">Find your language below for a specific example.</p>
+    <p class="languages">
+      <a target="_blank" href="https://github.com/codecov/example-python">Python</a>
+      <a target="_blank" href="https://github.com/codecov/example-ruby">Ruby</a>
+      <a target="_blank" href="https://github.com/codecov/example-node">NodeJS</a>
+      <a target="_blank" href="https://github.com/codecov/example-java">Java</a>
+      <a target="_blank" href="https://github.com/codecov/example-php">PHP</a>
+      <a target="_blank" href="https://github.com/codecov/example-xcode">XCode</a>
+      <a target="_blank" href="https://github.com/codecov/example-scala">Scala</a>
+      <a target="_blank" href="https://github.com/codecov/example-c">C</a>
+      <a target="_blank" href="https://github.com/codecov/example-cshart">C#</a>
+      <a target="_blank" href="https://github.com/codecov/example-go">Go</a>
+      <a target="_blank" href="https://github.com/codecov/example-d">D</a>
+      <a target="_blank" href="https://github.com/codecov/example-r">R</a>
+    </p>
+    <p class="languages">
+      <a target="_blank" href="https://github.com/codecov/example-lua">Lua</a>
+      <a target="_blank" href="https://github.com/codecov/example-julia">Julia</a>
+      <a target="_blank" href="https://github.com/codecov/example-fortran">Fortran</a>
+      <a target="_blank" href="https://github.com/codecov/example-perl">Perl</a>
+      <a target="_blank" href="https://github.com/codecov/example-haskell">Haskell</a>
+      <a target="_blank" href="https://github.com/codecov/example-xtend">Xtend</a>
+      <a target="_blank" href="https://github.com/codecov/example-groovy">Groovy</a>
+      <a target="_blank" href="https://github.com/codecov/example-kotlin">Kotlin</a>
+      <a target="_blank" href="https://github.com/codecov/example-dart">Dart</a>
     </p>
   </div>
 
@@ -126,8 +162,8 @@
       <div class="container open-source">
         <h5>Open Source</h5>
         <div class="well well-lg">
-          <a class="col-sm-12" href="#">
-            <i class="fa fa-globe fa-4x"></i>
+          <a class="col-sm-12" href="#" data-track="pricing,free" data-target="#modal-signup" data-toggle="modal">
+            <i class="fa fa-globe fa-2x"></i>
             <p class="price"><span>Free</span></p>
             <p>Forever</p>
             <button type="button" class="btn btn-default btn-xs">Get Now <i class="fa fa-arrow-right"></i></button>
@@ -146,25 +182,25 @@
 
         <div class="well well-lg">
 
-          <a class="col-sm-4" href="#">
-            <i class="fa fa-user fa-4x"></i>
+          <a class="col-sm-4" href="#" data-track="pricing,1m" data-target="#modal-signup" data-toggle="modal">
+            <i class="fa fa-user fa-2x"></i>
             <p class="price"><span>$3</span>/mo</p>
             <p>1 Private Repo</p>
             <button type="button" class="btn btn-default btn-xs">Start 14-Day Trial <i class="fa fa-arrow-right"></i></button>
           </a>
 
-          <a class="col-sm-4" href="#">
-            <i class="fa fa-umbrella fa-4x"></i>
+          <a class="col-sm-4" href="#" data-track="pricing,5m" data-target="#modal-signup" data-toggle="modal">
+            <i class="fa fa-umbrella fa-2x"></i>
             <p class="price"><span>$10</span>/mo</p>
             <p>5 Private Repos</p>
             <button type="button" class="btn btn-default btn-xs">Start 14-Day Trial <i class="fa fa-arrow-right"></i></button>
           </a>
 
-          <a class="col-sm-4" href="#">
-            <i class="fa fa-home fa-4x"></i>
+          <a class="col-sm-4" href="#" data-track="pricing,25m"data-target="#modal-signup" data-toggle="modal">
+            <i class="fa fa-home fa-2x"></i>
             <p class="price"><span>$45</span>/mo</p>
             <p>25 Private Repos</p>
-            <button type="button" class="btn btn-default btn-xs">Start 14-Day Trial <i class="fa fa-arrow-right"></i></button>
+            <button ttype="button" class="btn btn-default btn-xs">Start 14-Day Trial <i class="fa fa-arrow-right"></i></button>
           </a>
 
         </div>
@@ -172,7 +208,7 @@
         <div class="row">
           <p>Unlimited Public Repos and Unlimited Users</p>
           <p>Awesome Support</p>
-          <p><small><a href="#">Larger plans are available.</a></small></p>
+          <p><small>10% off when paid yearly. Larger plans available upon request.</small></p>
         </div>
       </div>
 
@@ -181,10 +217,10 @@
         <h5>Privatly Hosted</h5>
         <div class="well well-lg">
           <a class="col-sm-12" href="#">
-            <i class="fa fa-database fa-4x"></i>
+            <i class="fa fa-database fa-2x"></i>
             <p class="price"><span>Custom</span></p>
             <p>Based on your needs</p>
-            <button type="button" class="btn btn-default btn-xs">Contact Sales <i class="fa fa-arrow-right"></i></button>
+            <button data-track="pricing,enterprise" type="button" class="btn btn-default btn-xs">Contact Sales <i class="fa fa-arrow-right"></i></button>
           </a>
         </div>
         <div class="row">
@@ -201,22 +237,17 @@
     <div class="row">
       <div class="col-lg-6">
         <p class="quote-graph">
-          “Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. In tincidunt auctor tincidunt.
-          Vestibulum at mauris ut augue
-          rutrum tempus.”
+          <sup><i class="fa fa-quote-left"></i></sup> Codecov provides exactly what I need for all my code projects: Easy to install, accurate coverage reports that integrate magnificently with GitHub. <sup><i class="fa fa-quote-right"></i></sup>
         </p>
-        <img class="img-circle" src="http://i.imgur.com/lfqsFEL.jpg" height="50px" width="50px"/>
+        <img class="img-circle" src="https://pbs.twimg.com/profile_images/582392511907287042/i8aFyQvL_200x200.jpg" height="75px" width="75px"/>
         <p class="quote-name">
-          Betsy Dank, Dank Meme Industries
+          <strong>Daniel Roy Greenfeld</strong><br>
+          Co-Author of Two Scoops of Django and former NASA python coder
         </p>
       </div>
       <div class="col-lg-6">
         <p class="quote-graph">
-          “Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. In tincidunt auctor tincidunt.
-          Vestibulum at mauris ut augue
-          rutrum tempus.”
+          <sup><i class="fa fa-quote-left"></i></sup> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. <sup><i class="fa fa-quote-right"></i></sup>
         </p>
         <img class="img-circle" src="http://i.imgur.com/lfqsFEL.jpg" height="50px" width="50px"/>
         <p class="quote-name">
@@ -255,8 +286,8 @@
         <h4>Commit with confidence. Deploy fearlessly.</h4>
       </div>
       <div class="col-sm-5">
-        <a class="btn btn-primary btn-lg btn-signup" href="#" role="button">
-          <i class="fa fa-github"></i> <i class="fa fa-bitbucket"></i> <fa class="fa-gitlab"></fa>
+        <a class="btn btn-primary btn-lg btn-signup" href="#" data-target="#modal-signup" data-toggle="modal" role="button" data-track="signup,lastchange">
+          <i class="fa fa-github"></i> <i class="fa fa-bitbucket"></i> <i class="fa fa-gitlab"></i>
           Sign up for free
         </a>
       </div>
@@ -269,14 +300,14 @@
   <div class="row">
     <p><strong>Codecov <i class="fa fa-copyright"></i> 2015</strong></p>
     <ul class="list-inline footer-nav">
-      <li><a href="#">Sign Up</a></li>
+      <li><a href="#" data-target="#modal-signup" data-toggle="modal" data-track="signup,footer">Sign Up</a></li>
       <li><a href="/#languages">Guides</a></li>
       <li><a href="/privacy">Privacy</a></li>
       <li><a href="/tos">TOS</a></li>
       <li><a href="/api">API</a></li>
     </ul>
     <ul class="list-inline social" id="contact">
-      <li><a href="mailto:hello@codecov.io"><i class="fa fa-paper-plane-o"></i></a></li>
+      <li><a href="mailto:hello@codecov.io" data-track="support,email"><i class="fa fa-paper-plane-o"></i></a></li>
       <li><a href="https://twitter.com/codecov"><i class="fa fa-twitter"></i></a></li>
       <li><a href="https://github.com/codecov"><i class="fa fa-github"></i></a></li>
     </ul>
