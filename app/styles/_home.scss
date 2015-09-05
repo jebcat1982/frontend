@@ -76,6 +76,7 @@
         font-size: 44px;
         color: $secondary-green;
         margin-bottom: 15px;
+        margin-top: 15px;
       }
       p {
         font-weight: bold;
@@ -83,7 +84,7 @@
     }
   }
 
-  #feature-one, #feature-two, #feature-three {
+  .features {
     .row {
       // display: inline-flex;
 
@@ -108,6 +109,10 @@
 
       .feature-content {
         margin: auto 0;
+
+        sup {
+          margin-right: 10px;
+        }
       }
 
     }
@@ -169,7 +174,7 @@
           margin-top: 5px;
 
           span {
-            font-size: 40px;
+            font-size: 32px;
             margin-right: 3px;
           }
         }
@@ -406,7 +411,7 @@
     #quotes,
     #points-bottom,
     #last-cta {
-      padding: 0 20px;
+      padding: 20px 20px;
     }
 
     #points-top, #points-bottom {
@@ -418,6 +423,7 @@
     }
 
     .features {
+      padding: 20px 15px;
 
       .row {
         display: block;
@@ -431,7 +437,6 @@
         }
 
         .feature-content {
-          margin: 0;
         }
       }
     }
